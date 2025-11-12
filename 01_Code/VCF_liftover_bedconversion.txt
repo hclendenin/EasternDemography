@@ -13,8 +13,8 @@ bcftools query -f '%CHROM\t%POS0\t%END\t%ID\n' imputedEastern_with_ids.vcf.gz > 
 
 
 #Liftover BED file
-**updated halliftover script in home/easterndemog
-**modified within halLiftover_easternIDs.sh
+#**updated halliftover script in home/easterndemog
+#**modified within halLiftover_easternIDs.sh
 #Input: /project/hrclndnn/EasternDemog/imputedEastern_with_ids.bed
 #Output: /project/hrclndnn/EasternDemog/lifted_imputedEastern.bed
 
