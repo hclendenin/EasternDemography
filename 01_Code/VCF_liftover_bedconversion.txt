@@ -1,0 +1,103 @@
+#Description of steps and generic code commented out, with actual variable names below
+
+#Add unique IDs to VCF
+#bcftools annotate --set-id '%CHROM\_%POS' original.vcf.gz -Oz -o original_with_ids.vcf.gz
+#tabix -p vcf original_with_ids.vcf.gz
+bcftools annotate --set-id '%CHROM\_%POS' imputedEastern.vcf.gz -Oz -o imputedEastern_with_ids.vcf.gz
+tabix -p vcf imputedEastern_with_ids.vcf.gz
+
+
+#Convert VCF to BED (with ID in 4th column)
+#bcftools query -f '%CHROM\t%POS0\t%END\t%ID\n' input.vcf.gz > inputvcf_as.bed
+bcftools query -f '%CHROM\t%POS0\t%END\t%ID\n' imputedEastern_with_ids.vcf.gz > imputedEastern_with_ids.bed
+
+
+#Liftover BED file
+**updated halliftover script in home/easterndemog
+**modified within halLiftover_easternIDs.sh
+#Input: /project/hrclndnn/EasternDemog/imputedEastern_with_ids.bed
+#Output: /project/hrclndnn/EasternDemog/lifted_imputedEastern.bed
+
+#remove duplicates
+cat /project/hrclndnn/EasternDemog/lifted_imputedEastern.bed | sort -k4,4 | uniq -u -f3 > /project/hrclndnn/EasternDemog/lifted_nodups_imputedEastern.bed
+
+
+#Sort and join lifted BED to VCF by ID
+#sort -k4,4 lifted.bed > lifted_sorted.bed
+#sort -k4,4 /project/hrclndnn/EasternDemog/lifted_imputedEastern.bed > /project/hrclndnn/EasternDemog/lifted_sorted_imputedEastern.bed
+sort -k4,4 /project/hrclndnn/EasternDemog/lifted_nodups_imputedEastern.bed > /project/hrclndnn/EasternDemog/lifted_sorted_imputedEastern.bed
+
+
+#bcftools query -f '%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO[\t%SAMPLE=%GT]\n' original_with_ids.vcf.gz  | sort -k3,3 > vcf_fields.tsv
+bcftools query -f '%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO[\t%SAMPLE=%GT]\n' /project/hrclndnn/EasternDemog/imputedEastern_with_ids.vcf.gz | sort -k3,3 > /project/hrclndnn/EasternDemog/vcf_fields.tsv
+
+#Join by ID:
+#join -1 4 -2 3 <(sort -k4,4 lifted_sorted.bed) <(sort -k3,3 vcf_fields.tsv) > joined.tsv
+join -1 4 -2 3 <(sort -k4,4 /project/hrclndnn/EasternDemog/lifted_sorted_imputedEastern.bed) <(sort -k3,3 /project/hrclndnn/EasternDemog/vcf_fields.tsv) > /project/hrclndnn/EasternDemog/lifted_sorted_joined_imputedEastern.tsv
+
+
+#	#Build new VCF with updated coordinates
+#	#awk 'BEGIN{OFS="\t"} {print $1, $2+1, $3, $5, $6, $7, $8, $9}' joined.tsv > lifted_body.vcf
+#	#awk 'BEGIN{OFS="\t"} {print $1, $2+1, $3, $5, $6, $7, $8, $9}' /project/hrclndnn/EasternDemog/lifted_sorted_joined_imputedEastern.tsv > /project/hrclndnn/EasternDemog/lifted_body_imputedEastern.vcf
+#Rebuild the VCF body using the lifted CHROM and POS, and ignore the old ones. Include FORMAT and SAMPLE info
+#First awk script didn't account for join & subsequently shifted columns
+#awk 'BEGIN{OFS="\t"} {
+#    printf "%s\t%d\t%s\t%s\t%s\t%s\t%s\t%s", $1, $2+1, $3, $5, $6, $7, $8, $9;
+#    for (i = 10; i <= NF; i++) printf "\t%s", $i;
+#    printf "\n"
+#}' lifted_sorted_joined_imputedEastern.tsv > lifted_body_imputedEastern.vcf
+
+#awk 'BEGIN{OFS="\t"} {
+#    printf "%s\t%d\t%s\t%s\t%s\t%s\t%s\t%s", $2, $3+1, $1, $6, $7, $8, $9, $10;
+#    for (i = 11; i <= NF; i++) printf "\t%s", $i;
+#    printf "\n"
+#}' /project/hrclndnn/EasternDemog/lifted_sorted_joined_imputedEastern.tsv > /project/hrclndnn/EasternDemog/lifted_body_imputedEastern.vcf
+
+
+awk 'BEGIN{OFS="\t"} {
+    printf "%s\t%d\t%s\t%s\t%s\t%s\t%s\t%s", $2, $3+1, $1, $7, $8, $9, $10, $11;
+    for (i = 12; i <= NF; i++) printf "\t%s", $i;
+    printf "\n"
+}' lifted_sorted_joined_imputedEastern.tsv > lifted_body_imputedEastern.vcf
+
+
+###can skip to concatenation w/ header here if already created###
+
+#Add header back; this allows for use of bcftools in later steps modifying header
+#bcftools view -h original_with_ids.vcf.gz > header.vcf
+#cat header.vcf lifted_body.vcf > lifted_final.vcf
+bcftools view -h /project/hrclndnn/EasternDemog/imputedEastern_with_ids.vcf.gz > /project/hrclndnn/EasternDemog/imputedEastern_header.vcf
+cat /project/hrclndnn/EasternDemog/imputedEastern_header.vcf /project/hrclndnn/EasternDemog/lifted_body_imputedEastern.vcf > /project/hrclndnn/EasternDemog/lifted_imputedEastern_wheader_DNAZooContigs.vcf
+
+
+#Extract and edit header
+#bcftools view -h target.vcf.gz > header.txt
+bcftools view -h /project/hrclndnn/EasternDemog/lifted_imputedEastern_wheader_DNAZooContigs.vcf > /project/hrclndnn/EasternDemog/imputedEastern_header.txt
+
+
+#Remove the old ##contig=<ID=...> lines
+#grep -v '^##contig=<ID=' header.txt > new_header.txt
+grep -v '^##contig=<ID=' /project/hrclndnn/EasternDemog/imputedEastern_header.txt > /project/hrclndnn/EasternDemog/imputedEastern_new_header.txt
+
+
+#Add contig info from NCBI assembly in correct location (??)
+#awk '/^#CHROM/{found=1} !found {print} END{while((getline line < "Uamer_NCBI_contigs_only.txt")>0) print line} found' imputedEastern_new_header.txt > fixed_header.txt
+#	original put contigs before instead of after CHROM
+awk '
+  /^#CHROM/ {
+    while ((getline line < "Uamer_NCBI_contigs_only.txt") > 0) print line
+    print
+    found=1
+    next
+  }
+  { if (!found) print }
+' imputedEastern_new_header.txt > fixed_header.txt
+
+
+#Apply the new header with reheader
+bcftools reheader -h fixed_header.txt -o lifted_imputedEastern_reheadered.vcf.gz /project/hrclndnn/EasternDemog/lifted_imputedEastern_wheader_DNAZooContigs.vcf
+
+#alternatively: take the fixed header and concatenate the correctly formatted body
+cat fixed_header.txt lifted_body_imputedEastern.vcf | bgzip > lifted_final.vcf.gz
+tabix -p vcf lifted_final.vcf.gz
+
