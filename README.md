@@ -1,26 +1,96 @@
 # EasternDemography
-Scripts for file processing, analyses, and plots for black bear eastern demography 
+Scripts for file processing, analyses, and visualization for *Population specific bottlenecks inflated differentiation measures of Louisiana black bear and negate subspecific status* 
 
-SnpEff Annotation:
-1. VCF subsetting and reformatting for HalLiftover
-2. HalLiftover script for SnpEff annotation (DNAzoo to NCBI)
-3. SnpEff script
-4. HalLiftover script for downstream analyses (NCBI to DNAzoo)
-5. Formatting an annotated VCF with lifted coordinates
+**<ins>Whole Genome Sequencing and Variant Calling</ins>**	
+- Imputation
+- Genotype likelihoods
 
-RXY:
-1. Generating input files from annotated VCF
-2. RXY calculations
-3. RXY visualizations
 
-SFS:
-1. ANGSD SFS script for all Eastern populations
-2. realSFS 2D SFS for population pairs
-3. Heatmap plots of 2D SFS
-4. Subsetting for UARB analyses
+**<ins>Population Structure</ins>**
+- Filtering
+- PCA
+- Admixture
+- Treemix
 
-Variant distributions:
-1. Annotated alleles fixed across all Eastern lineage samples
-2. Annotated allleles shared across all Eastern lineage samples
-3. Euler plot for the Great Lakes, UARB, and other LA populations
-4. Frequency of alleles shared between UARB and other LA populations
+
+**<ins>Change in Population Size Through Time</ins>**
+- Site Frequency Spectra
+- GONE
+   - Imputed dataset
+   - Genotype Likelihoods
+      - Phasing
+  - Visualization (Stairway Plots)
+
+
+**<ins>Population Divergence Timing</ins>**
+  - Input:
+    - MSMC2
+    - Masking with SNPable
+ - MSMC-IM
+
+
+**<ins>Inbreeding and Genetic Diversity</ins>**
+  - ROH
+  - HO with VCFtools
+
+
+**<ins>Estimation of Deleterious Load:</ins>**
+ - **SnpEff Annotation:**
+    - VCF subsetting and reformatting for HalLiftover
+      - Imputed dataset
+      - GL dataset
+    - HalLiftover script for SnpEff annotation (DNAzoo to NCBI)
+    - SnpEff script
+    - HalLiftover script for downstream analyses (NCBI to DNAzoo)
+    - Formatting an annotated VCF with lifted coordinates
+
+  
+ - **Population comparisons with RXY:**
+    - Generating input files from annotated VCF
+    - RXY calculations
+    - RXY visualizations
+
+    
+ - **Allele frequency distributions with 2dSFS:**
+    - ANGSD SFS script for all Eastern populations
+    - realSFS 2D SFS for population pairs
+    - Heatmap plots of 2D SFS
+    - Subsetting for UARB analyses
+
+
+ - **Variant distributions across subpopulations:**
+    - Annotated alleles fixed across all Eastern lineage samples
+    - Annotated allleles shared across all Eastern lineage samples
+    - Euler plot for the Great Lakes, UARB, and other LA populations
+    - Frequency of alleles shared between UARB and other LA populations
+
+**<ins>Geographic Patterns of Adaptation:</ins>**
+-  **RDA:**
+    - Inputs:
+      - Genetic data
+      - Environmental data
+    - Analytical scripts
+      - dbMEMs
+      - Variance partitioning/ANOVAs
+    - Visualization
+
+
+**<ins>Selection and Diversification Scans:</ins>**
+ - **Subheading:**
+    - Listed Item
+ - **Subheading:**
+    - Listed Item
+
+
+**<ins>Header:</ins>**
+ - **Subheading:**
+    - Listed Item
+ - **Subheading:**
+    - Listed Item
+ - **Subheading:**
+    - Listed Item
+ - **Subheading:**
+    - Listed Item
+  
+- [Example link](https://example.com/)
+- [Example link](https://example.com/)
