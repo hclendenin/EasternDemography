@@ -1,5 +1,4 @@
-# EasternDemography
-Scripts for file processing, analyses, and visualization for *Population specific bottlenecks inflated differentiation measures of Louisiana black bear and negate subspecific status* 
+# Scripts for file processing, analyses, and visualization for *Population specific bottlenecks inflated differentiation measures of Louisiana black bear and negate subspecific status* 
 
 **<ins>Whole Genome Sequencing and Variant Calling</ins>**	
 - Imputation
