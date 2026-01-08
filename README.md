@@ -38,10 +38,11 @@
     - VCF reformatting for HalLiftover
       - [Liftover pipeline](https://github.com/hclendenin/EasternDemography/blob/main/liftover_pipeline.sh)
       - [Liftover helper script](https://github.com/hclendenin/EasternDemography/blob/main/update_vcf_coordinates.py)
-    - [HalLiftover script for SnpEff annotation (DNAzoo to NCBI)](https://github.com/hclendenin/EasternDemography/blob/main/halLiftover_DNAZooToNCBI.sh)
+       - [HalLiftover script for SnpEff annotation (DNAzoo to NCBI)](https://github.com/hclendenin/EasternDemography/blob/main/halLiftover_DNAZooToNCBI.sh)
     - [SnpEff script](https://github.com/hclendenin/EasternDemography/blob/main/Eastern_snpEffannotate.sh)
-    - [HalLiftover script for downstream analyses (NCBI to DNAzoo)](https://github.com/hclendenin/EasternDemography/blob/main/halLiftover_eastern_NCBItoDNAZoo.sh)
-    - [Formatting an annotated VCF with lifted coordinates](https://github.com/hclendenin/EasternDemography/blob/main/ann.vcf_to_bed.py)
+    - Annotated VCF reformatting and liftover
+       - [HalLiftover script for downstream analyses (NCBI to DNAzoo)](https://github.com/hclendenin/EasternDemography/blob/main/halLiftover_eastern_NCBItoDNAZoo.sh)
+       - [Formatting an annotated VCF with lifted coordinates](https://github.com/hclendenin/EasternDemography/blob/main/ann.vcf_to_bed.py)
 
   
  - **Population comparisons with RXY:**
