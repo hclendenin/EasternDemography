@@ -29,8 +29,8 @@
 
 
 **<ins>Inbreeding and Genetic Diversity</ins>**
-  - ROH
-  - HO with VCFtools
+  - [Runs of Homozygosity (ROH)](https://github.com/hclendenin/EasternDemography/blob/main/Identifying%20Runs%20of%20Homozygosity%20(ROHs))
+  - [Observed Heterozygosity (HO)](https://github.com/hclendenin/EasternDemography/blob/main/Estimating%20Observed%20Heterozygosity%20(HO))
 
 
 **<ins>Estimation of Deleterious Load:</ins>**
