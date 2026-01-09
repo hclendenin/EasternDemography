@@ -3,7 +3,7 @@
 import gzip
 from collections import defaultdict
 
-# === Input files and config ===
+#Input files and config
 vcf_file = "/scratch/hrclndnn/EasternDemo/GLEastern.ann.vcf"
 output_prefix = "/project/hrclndnn/EasternDemog/GLEastern_DNAzoo"
 
@@ -20,14 +20,14 @@ effect_categories = {
     "LOF": {"start_lost", "stop_gained"}
 }
 
-# === Get sample names per population ===
+#Get sample names per population
 def get_sample_names(bamlist):
     with open(bamlist, 'r') as f:
         return [line.strip().split('/')[-1].replace(".bam", "").split('.')[-1] for line in f]
 
 pop_samples = {pop: set(get_sample_names(path)) for pop, path in bamlist_dict.items()}
 
-# === Prepare output file handles ===
+#Prepare output file handles
 output_files = {
     category: {
         pop: open(f"{output_prefix}.{category}.{pop}.bed", "w")
@@ -36,12 +36,7 @@ output_files = {
     for category in effect_categories
 }
 
-# === Parse ANN field ===
-#def parse_ann_field(info):
-#    for entry in info.split(";"):
-#        if entry.startswith("ANN="):
-#            annotations = entry[len("ANN="):].split(",")
-#            return [a.split("|"]()
+#Parse ANN field
 def parse_ann_field(info):
     for entry in info.split(";"):
         if entry.startswith("ANN="):
