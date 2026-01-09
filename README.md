@@ -57,6 +57,7 @@
     
  - **Allele frequency distributions with 2dSFS:**
     - ANGSD SFS script for all Eastern populations
+    -    Sites file creation
     - realSFS 2D SFS for population pairs
     - Heatmap plots of 2D SFS
     - Subsetting for UARB analyses
