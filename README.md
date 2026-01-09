@@ -63,9 +63,10 @@
           - [BED to POS file](hclendenin/EasternDemography/blob/main/job.ConvertBed2Pos.sh)
           - [Index POS file](https://github.com/hclendenin/EasternDemography/blob/main/index_pos_files.sh)
       - [SFS and realSFS](https://github.com/hclendenin/EasternDemography/blob/main/job.SFS_indexedPosfiles.sh)
-    - realSFS 2D SFS for population pairs
+    - [realSFS 2D SFS for population pairs](https://github.com/hclendenin/EasternDemography/blob/main/job.2dSFS.sh)
     - Heatmap plots of 2D SFS
-    - Subsetting for UARB analyses
+    - (Rerunning for UARB analyses)[https://github.com/hclendenin/EasternDemography/blob/main/job.SFS_UARB_otherLA_noF1s.sh]
+      
 
 
  - **Variant distributions across subpopulations:**
