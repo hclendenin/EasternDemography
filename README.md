@@ -51,8 +51,8 @@
           - [Submission script](https://github.com/hclendenin/EasternDemography/blob/main/job.generateFreqs.sh)
        - [Script to correctly generate LOF freq files from VCF info](https://github.com/hclendenin/EasternDemography/blob/main/generate_LOF_freqs.sh)
           - [LOF freq submission script](https://github.com/hclendenin/EasternDemography/blob/main/job.generateLOFFreqs.sh)
-    - RXY calculations
-    - RXY visualizations
+    - [RXY calculations & visualizations](https://github.com/hclendenin/EasternDemography/blob/main/rxy_pipeline.R)
+      - [Additional visualizations](https://github.com/hclendenin/EasternDemography/blob/main/Rxy_combinedPlots.R)
 
     
  - **Allele frequency distributions with 2dSFS:**
