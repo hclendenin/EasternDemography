@@ -47,6 +47,10 @@
   
  - **Population comparisons with RXY:**
     - Generating input files from annotated VCF
+       - Script to generate freq files from VCF info
+       - Submission script
+       - Script to correctly generate LOF freq files from VCF info
+       - LOF freq submission script
     - RXY calculations
     - RXY visualizations
 
