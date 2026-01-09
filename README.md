@@ -60,7 +60,7 @@
        - Sites file creation
           - [VCF to BED file](https://github.com/hclendenin/EasternDemography/blob/main/createSFSbeds_by_pop.py)
             - [Submission script](https://github.com/hclendenin/EasternDemography/blob/main/job.createSFSbeds_by_pop.sh)
-          - [BED to POS file]([https://github.com/hclendenin/EasternDemography/tree/main](https://github.com/hclendenin/EasternDemography/blob/main/job.ConvertBed2Pos.sh)
+          - [BED to POS file](hclendenin/EasternDemography/blob/main/job.ConvertBed2Pos.sh)
           - [Index POS file](https://github.com/hclendenin/EasternDemography/blob/main/index_pos_files.sh)
       - [SFS and realSFS](https://github.com/hclendenin/EasternDemography/blob/main/job.SFS_indexedPosfiles.sh)
     - realSFS 2D SFS for population pairs
