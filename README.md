@@ -1,15 +1,16 @@
 # Scripts for file processing, analyses, and visualization for *Population specific bottlenecks inflated differentiation measures of Louisiana black bear and negate subspecific status* 
 
 **<ins>Whole Genome Sequencing and Variant Calling</ins>**	
+- [Creating ancestral reference as precursor to ANGSD processes](https://github.com/hclendenin/EasternDemography/blob/main/ancANGSD.sh)
 - Imputation
-- Genotype likelihoods
+- [Genotype likelihoods](https://github.com/hclendenin/EasternDemography/blob/main/angsd_Dec18_2024.sh)
 
 
 **<ins>Population Structure</ins>**
-- Filtering
-- PCA
-- Admixture
-- Treemix
+- [Filtering, PCA, & Admixture](https://github.com/hclendenin/EasternDemography/blob/main/admixture.sh)
+- [Treemix](https://github.com/hclendenin/EasternDemography/blob/main/treemix.sh)
+- [Pairwise FST](https://github.com/hclendenin/EasternDemography/blob/main/treemix.sh)
+- [Sliding window FST](https://github.com/hclendenin/EasternDemography/blob/main/treemix.sh)
 
 
 **<ins>Change in Population Size Through Time</ins>**
@@ -71,7 +72,7 @@
 
  - **Variant distributions across subpopulations:**
     - Annotated alleles fixed across all Eastern lineage samples
-    - Annotated allleles shared across all Eastern lineage samples
+    - Annotated alleles shared across all Eastern lineage samples
     - Euler plot for the Great Lakes, UARB, and other LA populations
     - Frequency of alleles shared between UARB and other LA populations
 
