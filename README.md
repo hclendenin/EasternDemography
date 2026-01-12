@@ -81,7 +81,7 @@
 -  **RDA:**
     - Inputs:
       - [Genetic data into .raw file](https://github.com/hclendenin/EasternDemography/blob/main/eastern.RDA.dataprep.sh)
-      - Environmental data
+      - Environmental data (all processed in ArcPro)
     - Analytical scripts
       - [dbMEMs](https://github.com/hclendenin/EasternDemography/blob/main/dbMEM.R)
       - [RDA scripts (full and partial)](https://github.com/hclendenin/EasternDemography/blob/main/easternRDA.R)
@@ -93,9 +93,7 @@
 
 **<ins>Selection and Diversification Scans:</ins>**
  - **Sliding window FST:**
-    - Listed Item
  - **selscan for iHS and iHH12:**
-    - Listed Item
 
 
 **<ins>Header:</ins>**
