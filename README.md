@@ -26,8 +26,8 @@
 **<ins>Population Divergence Timing</ins>**
   - Input:
     - MSMC2
-    - Masking with SNPable
- - MSMC-IM
+    - [Masking with SNPable](https://github.com/hclendenin/EasternDemography/blob/main/SNPable.sh)
+ - [MSMC-IM](https://github.com/hclendenin/EasternDemography/blob/main/eastern.msmcIM.sh)
 
 
 **<ins>Inbreeding and Genetic Diversity</ins>**
@@ -80,12 +80,15 @@
 **<ins>Geographic Patterns of Adaptation:</ins>**
 -  **RDA:**
     - Inputs:
-      - Genetic data
+      - [Genetic data into .raw file](https://github.com/hclendenin/EasternDemography/blob/main/eastern.RDA.dataprep.sh)
       - Environmental data
     - Analytical scripts
-      - dbMEMs
+      - [dbMEMs](https://github.com/hclendenin/EasternDemography/blob/main/dbMEM.R)
+      - [RDA scripts (full and partial)](https://github.com/hclendenin/EasternDemography/blob/main/easternRDA.R)
       - Variance partitioning/ANOVAs
     - Visualization
+      - RDA spatial visulizations and projections all done in ArcPro
+      - [dbMEM visualization](https://github.com/hclendenin/EasternDemography/blob/main/FigureS9-dbMEM.R)   
 
 
 **<ins>Selection and Diversification Scans:</ins>**
