@@ -9,17 +9,18 @@
 **<ins>Population Structure</ins>**
 - [Filtering, PCA, & Admixture](https://github.com/hclendenin/EasternDemography/blob/main/admixture.sh)
 - [Treemix](https://github.com/hclendenin/EasternDemography/blob/main/treemix.sh)
-- [Pairwise FST](https://github.com/hclendenin/EasternDemography/blob/main/treemix.sh)
-- [Sliding window FST](https://github.com/hclendenin/EasternDemography/blob/main/treemix.sh)
+- [Pairwise FST](https://github.com/hclendenin/EasternDemography/blob/main/fst.pop.sh)
+- [Sliding window FST](https://github.com/hclendenin/EasternDemography/blob/main/fst.eastern.sh)
 
 
 **<ins>Change in Population Size Through Time</ins>**
-- Site Frequency Spectra
+- [Single Population Site Frequency Spectra (GLs)](https://github.com/hclendenin/EasternDemography/blob/main/stairwaySFS.sh))
+- [Stairway](https://github.com/hclendenin/EasternDemography/blob/main/stairway.sh))
+-   - [Visualization (Stairway Plots)](https://github.com/hclendenin/EasternDemography/blob/main/stairway.R)
 - GONE
-   - Imputed dataset
-   - Genotype Likelihoods
-      - Phasing
-  - Visualization (Stairway Plots)
+  - [Subsetting to pops of interest, run temp VCF through Plink for filtering, reformat map file, runs Plink & concatenates 50 independent runs](https://github.com/hclendenin/EasternDemography/blob/main/gone.east.sh)
+  - [Visualization](https://github.com/hclendenin/EasternDemography/blob/main/gone.east.R)
+
 
 
 **<ins>Population Divergence Timing</ins>**
