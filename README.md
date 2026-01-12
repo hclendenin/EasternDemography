@@ -92,9 +92,9 @@
 
 
 **<ins>Selection and Diversification Scans:</ins>**
- - **Subheading:**
+ - **Sliding window FST:**
     - Listed Item
- - **Subheading:**
+ - **selscan for iHS and iHH12:**
     - Listed Item
 
 
