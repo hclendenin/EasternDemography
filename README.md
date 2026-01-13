@@ -79,15 +79,15 @@
 **<ins>07 Geographic Patterns of Adaptation:</ins>**
 -  **RDA:**
     - Inputs:
-      - [Genetic data into .raw file](https://github.com/hclendenin/EasternDemography/blob/main/eastern.RDA.dataprep.sh)
+      - [Genetic data into .raw file](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/eastern.RDA.dataprep.sh)
       - Environmental data (all processed in ArcPro)
     - Analytical scripts
-      - [dbMEMs](https://github.com/hclendenin/EasternDemography/blob/main/dbMEM.R)
-      - [RDA scripts (full and partial)](https://github.com/hclendenin/EasternDemography/blob/main/easternRDA.R)
+      - [dbMEMs](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/dbMEM.R)
+      - [RDA scripts (full and partial)](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/easternRDA.R)
       - Variance partitioning/ANOVAs
     - Visualization
       - RDA spatial visulizations and projections all done in ArcPro
-      - [dbMEM visualization](https://github.com/hclendenin/EasternDemography/blob/main/FigureS9-dbMEM.R)   
+      - [dbMEM visualization](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/FigureS9-dbMEM.R)   
 
 
 **<ins>08 Selection and Diversification Scans:</ins>**
