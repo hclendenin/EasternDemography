@@ -83,8 +83,7 @@
       - Environmental data (all processed in ArcPro)
     - Analytical scripts
       - [dbMEMs](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/dbMEM.R)
-      - [RDA scripts (full and partial)](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/easternRDA.R)
-      - Variance partitioning/ANOVAs
+      - [RDA scripts (full and partial)/Variance partitioning/ANOVAs](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/easternRDA.R)
     - Visualization
       - RDA spatial visulizations and projections all done in ArcPro
       - [dbMEM visualization](https://github.com/hclendenin/EasternDemography/blob/main/07%20Geographic%20Patterns%20of%20Adaptation/FigureS9-dbMEM.R)   
