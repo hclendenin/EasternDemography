@@ -1,7 +1,7 @@
 # Scripts for file processing, analyses, and visualization for *Population specific bottlenecks inflated differentiation measures of Louisiana black bear and negate subspecific status* 
 
 **<ins>Whole Genome Sequencing and Variant Calling</ins>**	
-- [Creating ancestral reference as precursor to ANGSD processes](https://github.com/hclendenin/EasternDemography/blob/main/ancANGSD.sh)
+- [Creating ancestral reference as precursor to ANGSD processes](https://github.com/hclendenin/EasternDemography/blob/main/01%20Whole%20Genome%20Sequencing%20and%20Variant%20Calling/ancANGSD.sh)
 - Imputation
 - [Genotype likelihoods](https://github.com/hclendenin/EasternDemography/blob/main/angsd_Dec18_2024.sh)
 
