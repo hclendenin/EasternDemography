@@ -1,0 +1,2 @@
+ - **Sliding window FST:** - [Sliding window FST](https://github.com/hclendenin/EasternDemography/blob/main/fst.eastern.sh)
+ - **selscan for iHS and iHH12:**
