@@ -1,19 +1,19 @@
 # Scripts for file processing, analyses, and visualization for *Population specific bottlenecks inflated differentiation measures of Louisiana black bear and negate subspecific status* 
 
-**<ins>Whole Genome Sequencing and Variant Calling</ins>**	
+**<ins>01 Whole Genome Sequencing and Variant Calling</ins>**	
 - [Creating ancestral reference as precursor to ANGSD processes](https://github.com/hclendenin/EasternDemography/blob/main/01%20Whole%20Genome%20Sequencing%20and%20Variant%20Calling/ancANGSD.sh)
 - Imputation
 - [Genotype likelihoods](https://github.com/hclendenin/EasternDemography/blob/main/01%20Whole%20Genome%20Sequencing%20and%20Variant%20Calling/angsd_Dec18_2024.sh)
 
 
-**<ins>Population Structure</ins>**
+**<ins>02 Population Structure</ins>**
 - [Filtering, PCA, & Admixture](https://github.com/hclendenin/EasternDemography/blob/main/02%20Population%20Structure/admixture.sh)
 - [Treemix](https://github.com/hclendenin/EasternDemography/blob/main/02%20Population%20Structure/treemix.sh)
 - [Pairwise FST](https://github.com/hclendenin/EasternDemography/blob/main/02%20Population%20Structure/fst.pop.sh)
 
 
 
-**<ins>Change in Population Size Through Time</ins>**
+**<ins>03 Change in Population Size Through Time</ins>**
 - [Single Population Site Frequency Spectra (GLs)](https://github.com/hclendenin/EasternDemography/blob/main/03%20Change%20in%20Population%20Size%20Through%20Time/stairwaySFS.sh)
 - [Stairway](https://github.com/hclendenin/EasternDemography/blob/main/03%20Change%20in%20Population%20Size%20Through%20Time/stairway.sh)
 -   - [Visualization (Stairway Plots)](https://github.com/hclendenin/EasternDemography/blob/main/03%20Change%20in%20Population%20Size%20Through%20Time/stairway.R)
@@ -23,19 +23,19 @@
 
 
 
-**<ins>Population Divergence Timing</ins>**
+**<ins>04 Population Divergence Timing</ins>**
   - Input:
     - MSMC2
-    - [Masking with SNPable](https://github.com/hclendenin/EasternDemography/blob/main/SNPable.sh)
+    - [Masking with SNPable](https://github.com/hclendenin/EasternDemography/blob/main/04%20Population%20Divergence%20Timing/SNPable.sh)
  - [MSMC-IM](https://github.com/hclendenin/EasternDemography/blob/main/eastern.msmcIM.sh)
 
 
-**<ins>Inbreeding and Genetic Diversity</ins>**
+**<ins>05 Inbreeding and Genetic Diversity</ins>**
   - [Runs of Homozygosity (ROH)](https://github.com/hclendenin/EasternDemography/blob/main/Identifying%20Runs%20of%20Homozygosity%20(ROHs))
   - [Observed Heterozygosity (HO)](https://github.com/hclendenin/EasternDemography/blob/main/Estimating%20Observed%20Heterozygosity%20(HO))
 
 
-**<ins>Estimation of Deleterious Load:</ins>**
+**<ins>06 Estimation of Deleterious Load:</ins>**
  - **SnpEff Annotation:**
     - VCF reformatting for HalLiftover
       - [Liftover pipeline](https://github.com/hclendenin/EasternDemography/blob/main/liftover_pipeline.sh)
@@ -77,7 +77,7 @@
     - Euler plot for the Great Lakes, UARB, and other LA populations
     - Frequency of alleles shared between UARB and other LA populations
 
-**<ins>Geographic Patterns of Adaptation:</ins>**
+**<ins>07 Geographic Patterns of Adaptation:</ins>**
 -  **RDA:**
     - Inputs:
       - [Genetic data into .raw file](https://github.com/hclendenin/EasternDemography/blob/main/eastern.RDA.dataprep.sh)
@@ -91,7 +91,7 @@
       - [dbMEM visualization](https://github.com/hclendenin/EasternDemography/blob/main/FigureS9-dbMEM.R)   
 
 
-**<ins>Selection and Diversification Scans:</ins>**
+**<ins>08 Selection and Diversification Scans:</ins>**
  - **Sliding window FST:** - [Sliding window FST](https://github.com/hclendenin/EasternDemography/blob/main/fst.eastern.sh)
  - **selscan for iHS and iHH12:**
 
