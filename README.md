@@ -61,7 +61,7 @@
        - Sites file creation
           - [VCF to BED file](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/createSFSbeds_by_pop.py)
             - [Submission script](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/job.createSFSbeds_by_pop.sh)
-          - [BED to POS file](hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/job.ConvertBed2Pos.sh)
+          - [BED to POS file](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/job.ConvertBed2Pos.sh)
           - [Index POS file](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/index_pos_files.sh)
       - [SFS and realSFS](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/job.SFS_indexedPosfiles.sh)
     - [realSFS 2D SFS for population pairs](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/job.2dSFS.sh)
