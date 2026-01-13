@@ -91,16 +91,9 @@
 
 
 **<ins>08 Selection and Diversification Scans:</ins>**
- - **Sliding window FST:** - [Sliding window FST](https://github.com/hclendenin/EasternDemography/blob/main/fst.eastern.sh)
- - **selscan for iHS and iHH12:**
+ - [Sliding window FST](https://github.com/hclendenin/EasternDemography/blob/main/08%20Selection%20and%20Diversification%20Scans/fst.eastern.sh)
+ - [selscan for iHS and iHH12](https://github.com/hclendenin/EasternDemography/blob/main/08%20Selection%20and%20Diversification%20Scans/ihs_ihh12.eastern.sh)
 
-
-**<ins>Header:</ins>**
- - **Subheading:**
-    - Listed Item
- - **Subheading:**
-    - Listed Item
- - **Subheading:**
     - Listed Item
  - **Subheading:**
     - Listed Item
