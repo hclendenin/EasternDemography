@@ -30,7 +30,7 @@
  - [MSMC-IM](https://github.com/hclendenin/EasternDemography/blob/main/04%20Population%20Divergence%20Timing/eastern.msmcIM.sh)
 
 **<ins>05 Inbreeding and Genetic Diversity</ins>**
-  - [Runs of Homozygosity (ROH)](https://github.com/hclendenin/EasternDemography/blob/main/Identifying%20Runs%20of%20Homozygosity%20(ROHs))
+  - [Runs of Homozygosity (ROH)](https://github.com/hclendenin/EasternDemography/blob/main/05%20Inbreeding%20and%20Genetic%20Diversity/Identifying%20Runs%20of%20Homozygosity%20(ROHs))
   - [Observed Heterozygosity (HO)](https://github.com/hclendenin/EasternDemography/blob/main/Estimating%20Observed%20Heterozygosity%20(HO))
 
 
