@@ -27,8 +27,7 @@
   - Input:
     - MSMC2
     - [Masking with SNPable](https://github.com/hclendenin/EasternDemography/blob/main/04%20Population%20Divergence%20Timing/SNPable.sh)
- - [MSMC-IM](https://github.com/hclendenin/EasternDemography/blob/main/eastern.msmcIM.sh)
-
+ - [MSMC-IM](https://github.com/hclendenin/EasternDemography/blob/main/04%20Population%20Divergence%20Timing/eastern.msmcIM.sh)
 
 **<ins>05 Inbreeding and Genetic Diversity</ins>**
   - [Runs of Homozygosity (ROH)](https://github.com/hclendenin/EasternDemography/blob/main/Identifying%20Runs%20of%20Homozygosity%20(ROHs))
