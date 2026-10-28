@@ -157,7 +157,7 @@ saveRDS(rxy_jackknife, file = "rxy_jackknife_final.rds")
 write.csv(rxy_jackknife, "rxy_jackknife_final.csv", row.names = FALSE)
 
 # ─────────────────────────────────────────────────────────
-# ▶ Rxy Summary Stats (mean, SE, 95% CI) for each pair
+#  Rxy Summary Stats (mean, SE, 95% CI) for each pair
 # ─────────────────────────────────────────────────────────
 rxy_summary <- rxy_jackknife %>%
   group_by(PopPairs) %>%
