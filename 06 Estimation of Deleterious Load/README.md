@@ -13,6 +13,7 @@
  - **Population comparisons with RXY:**
     - Generating input files from annotated VCF
        - [Script to generate freq files from VCF info](https://github.com/hclendenin/EasternDemography/blob/main/generate_all_freqs.sh)
+         	-[Python script to for VCF processing & calculations for freq files](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/make_freq_by_popAllCalledVar.py)
           - [Submission script](https://github.com/hclendenin/EasternDemography/blob/main/job.generateFreqs.sh)
        - [Script to correctly generate LOF freq files from VCF info](https://github.com/hclendenin/EasternDemography/blob/main/generate_LOF_freqs.sh)
           - [LOF freq submission script](https://github.com/hclendenin/EasternDemography/blob/main/job.generateLOFFreqs.sh)
