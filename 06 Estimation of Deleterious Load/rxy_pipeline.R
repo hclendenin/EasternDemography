@@ -35,7 +35,7 @@ for (pop in populations) {
   }
 }
 
-#5. Define populations and categories (case-sensitive)
+#5. Define populations and categories 
 pops <- c("CoastalLA","Tensas","Southeast", "GreatLakes")
 
 #6. Initialize (empty) output dataframe to hold jackknife Rxy values
