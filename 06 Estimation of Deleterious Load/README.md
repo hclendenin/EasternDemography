@@ -19,6 +19,10 @@
           - [LOF freq submission script](https://github.com/hclendenin/EasternDemography/blob/main/job.generateLOFFreqs.sh)
     - [RXY calculations & visualizations](https://github.com/hclendenin/EasternDemography/blob/main/rxy_pipeline.R)
       - [Additional RXY visualizations](https://github.com/hclendenin/EasternDemography/blob/main/Rxy_combinedPlots.R)
+	- Upcoming revisions:
+		- LOF is the only category with multiple effects; verify that sites annotated with multiple LOF effects are only counted once.
+ 		- LOF effects to be calculated with other categories rather than separately.
+    	- RXY jackknifing to be revised to iterate over fixed lengths rather than scaffolds
 
     
  - **Allele frequency distributions with 2dSFS:**
