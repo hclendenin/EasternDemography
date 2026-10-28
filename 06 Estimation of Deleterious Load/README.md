@@ -20,9 +20,10 @@
     - [RXY calculations & visualizations](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/rxy_pipeline.R)
       - [Additional RXY visualizations](https://github.com/hclendenin/EasternDemography/blob/main/06%20Estimation%20of%20Deleterious%20Load/Rxy_combinedPlots.R)
 	- Upcoming revisions:
-		- LOF is the only category with multiple effects; verify that sites annotated with multiple LOF effects are only counted once.
+		- LOF_freqs needs revision. LOF is the only category with multiple effects & sites annotated with multiple LOF effects need to only be counted once.
  		- LOF effects to be calculated with other categories rather than separately.
-    	- RXY jackknifing to be revised to iterate over fixed lengths rather than scaffolds
+    	- RXY jackknifing to be revised to iterate over fixed lengths rather than scaffolds; change SE calculation
+       	- RXY variants currently joined on CHROM and POS; join on CHROM, POS, REF, and ALT 
 
     
  - **Allele frequency distributions with 2dSFS:**
